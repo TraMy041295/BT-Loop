@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        // Bài 1
+        // let mycolor = ["red","green","White","black"];
+        // document.write(mycolor.toString())
+        // Bài 2
+        let number = prompt("nhập vào 1 dãy số....")
+        let number1 = number.split(" ")
+        for( let x = 1 ; x < number1.length ; x++ ){
+            if((number1[x] % 2 == 0)&& (number1[x+1] % 2 == 0)){
+                number1[x] += "-"
+                number1.splice(x,0,"-")
+            } 
+        }
+        document.write(number1.join(""));
+
+    </script>
+</body>
+</html>
